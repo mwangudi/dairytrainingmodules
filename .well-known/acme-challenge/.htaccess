@@ -1,0 +1,12 @@
+
+# BEGIN WP_Encryption
+# The directives (lines) between "BEGIN WP_Encryption" and "END WP_Encryption" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTPS} =on [NC]
+RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_FILENAME} [R=301,L]
+</IfModule>
+
+# END WP_Encryption
